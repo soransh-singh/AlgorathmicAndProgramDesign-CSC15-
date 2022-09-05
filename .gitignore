@@ -1,2 +1,4 @@
 *.pdf
 *.exe
+*.cpp~
+*.cpp.un~
