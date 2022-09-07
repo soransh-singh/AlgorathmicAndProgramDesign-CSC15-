@@ -4,9 +4,12 @@ using namespace std;
 
 /* fibonacci iterative */
 int fib_iterative(int num){
-	if(num <= 1){
-		return num;
-	}else{
+	if(num == 1){
+		return 0;
+	}else if(num == 2){
+		return 1;
+	}
+	else{
 		int fib1 = 0;
 		int fib2 = 1;
 		int fib3 = 0;
@@ -21,18 +24,20 @@ int fib_iterative(int num){
 
 /* fibonacci recursive */
 int fib_recursive(int num){
-	if(num <=1){
-		return num;
+	if(num ==1){
+		return 0;
+	}else if(num == 2){
+		return 1;
 	}else{
 		return fib_recursive(num-1) + fib_recursive(num-2);
 	}
 } 
 
 int main(){
-	cout<<fib_iterative(3)<<"\n";
-	cout<<fib_iterative(4)<<"\n";
-	cout<<fib_iterative(5)<<"\n";
-	cout<<fib_recursive(3)<<"\n";
-	cout<<fib_recursive(12)<<"\n";
+	int num;
+	cout<<"Enter a number to get it's corresponding fibonacci number:";
+	cin>>num;
+	cout<<"Fibonacci number by iterative manner: "<<fib_iterative(num)<<"\n";
+	cout<<"Fibonacci number by recursive manner: "<<fib_recursive(num)<<"\n";
 	return 0;
 }
