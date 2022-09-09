@@ -1,0 +1,11 @@
+{
+  "name": "maintain",
+  "version": "1.0.0",
+  "description": "to maintain and delete file from this directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "soransh singh",
+  "license": "ISC"
+}
