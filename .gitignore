@@ -2,4 +2,4 @@
 *.exe
 *.cpp~
 *.cpp.un~
-.ques04.cpp.swp
+*.swp

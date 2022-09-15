@@ -3,21 +3,32 @@
 
 using namespace std;
 
-double sine(double x){
-	float val = 0;
-	int fact = 1;
-	for(int n=0; n<=16; n++){
-		val += (pow(-1,n) * pow(x, (2*n)+1)/fact);
-		cout<<"val"<<n<<" : "<<val<<endl;
-		fact *= (2*(n+1)) * ((2*(n+1))+1);
+double fact(double num){
+	if(num == 0)
+		return 1;
+	else
+		return num*fact(num-1);
+}
+
+double sine(double x, int n){
+	int power, i, sign, den;
+	double ans=0, y=(x*3.14159)/180;
+	for(int i=0; i<n; i++){
+		power = (2*i)+1;
+		den = fact(power);
+		sign = pow(-1, i);
+		ans=ans+(sign*pow(y, power)/den);
 	}
-	return val;
+	return ans;
 }
 
 int main(){
+	int n;
 	double x;
-	cout<<"Enter a angle in radian: ";
+	cout<<"Enter a angle in angle: ";
 	cin>>x;
-	cout<<"Value of sin("<<x<<") = "<<sine(x)<<"\n";
+	cout<<"Enter the number of in series :";
+	cin>>n;
+	cout<<"Value of sin("<<x<<") = "<<sine(x,n)<<"\n";
 	return 0;
 }

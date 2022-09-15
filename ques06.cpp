@@ -20,8 +20,12 @@ int gcd(int num1, int num2){
 }
 
 int main(){
-	cout<<gcd(12,14)<<endl;
-	cout<<gcd(12,16)<<endl;
-	cout<<gcd(15,40)<<endl;
+	int num1, num2;
+	cout<<"Enter the two numbers to find it's GCD"<<endl;
+	cout<<"Enter a First Number: ";
+	cin>>num1;
+	cout<<"Enter a Second Number: ";
+	cin>>num2;
+	cout<<"GCD of Given two numbers is "<<gcd(num1,num2)<<endl;
 	return 0;
 }
