@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<cmath>
+
 using namespace std;
 
 // convert a decimal number into
