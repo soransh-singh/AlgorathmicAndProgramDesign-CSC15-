@@ -20,7 +20,7 @@ of the program.
 
 
 4. Write a program to evaluate the function sin(x) as defined by the series expansion,
- - (a) sin(x) = x/1! – x
+ - (a)  sin(x) = x/1! – x^3/3! + x^5/5! - x^7/7! + ---- upto n terms
 
 
 5. Write a program to find square root of given number n using a user-defined function.
