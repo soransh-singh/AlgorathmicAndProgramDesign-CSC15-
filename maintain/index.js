@@ -25,6 +25,11 @@ if(process.argv[2] === "add"){
 
 }
 
+else if(process.argv[2] === "merge"){
+  const quesNoStart = process.argv[3]
+  const quesNoEnd = process.argv[4]
+}
+
 
 
 

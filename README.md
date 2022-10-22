@@ -14,9 +14,7 @@ Take as input a positive integer 'n' from the user.
 - (a) Compute the Fibonacci number corresponding to 'n' in a iterative fashion. 
 - (b) Compute the Fibonacci number corresponding to 'n' in a recursive fashion.
  Compute the number of function calls to any 'fib(i)', where 0<=i<=n.
-In both cases, check what is the largest 'n' for which you can find the Fibonacci number. For any 
-particular 'n', compute and compare the real times taken by the iterative and recursive versions 
-of the program. 
+In both cases, check what is the largest 'n' for which you can find the Fibonacci number. For any particular 'n', compute and compare the real times taken by the iterative and recursive versions of the program. 
 
 
 4. Write a program to evaluate the function sin(x) as defined by the series expansion,
