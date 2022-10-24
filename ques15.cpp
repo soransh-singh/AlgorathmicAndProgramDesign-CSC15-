@@ -2,11 +2,6 @@
 
 using namespace std;
 
-// 15. Write a program to implement the algorithm to search 
-// an element in an array of N elements 
-// using linear search and binary search and determine the 
-// time to search the element in each case.
-
 void sort(int* arr, int n){
   int temp;
   for(int i=0; i<n; i++){

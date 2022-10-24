@@ -26,8 +26,20 @@ if(process.argv[2] === "add"){
 }
 
 else if(process.argv[2] === "merge"){
-  const quesNoStart = process.argv[3]
-  const quesNoEnd = process.argv[4]
+  const start = process.argv[3]
+  const end = process.argv[4]
+  const mergeFile = "./solution.docx"
+  let text, quesPath;
+
+  fs.appendFileSync(mergeFile, "utf8");
+  fs.writeFileSync(mergeFile, "Soransh Singh")
+  for(let i=start; i<=end; i++){
+    quesPath = `ques${i<10?"0":""}${i}.cpp`
+    text = fs.readFileSync(`./../${quesPath}`, "utf8")
+    fs.writeFileSync(mergeFile, `\n\n\n${quesPath}\n\n`, {flag: 'a+'})
+    fs.writeFileSync(mergeFile, text, {flag: 'a+'})
+  }
+  console.log("Job done my Love");
 }
 
 

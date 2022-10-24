@@ -1,4 +1,5 @@
 *.pdf
+*.docx
 *.exe
 *.cpp~
 *.cpp.un~
