@@ -6,7 +6,7 @@ using namespace std;
 
 int power(int num, int var){
   if(var == 0){
-    return 1
+    return 1;
   }else if(var == 1){
     return num;
   }
