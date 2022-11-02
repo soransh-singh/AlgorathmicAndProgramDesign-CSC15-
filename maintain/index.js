@@ -28,10 +28,13 @@ if(process.argv[2] === "add"){
 
 
 else if(process.argv[2] === "merge"){
-  const start = process.argv[3]
-  const end = process.argv[4]
+  const start = Number(process.argv[3])
+  const end = Number(process.argv[4])
   const mergeFile = "./solution.docx"
   let text, filePath, questions;
+
+  console.log(start);
+  console.log(end);
 
   questions = fs.readFileSync(`./../questions.md`, "utf8")
   questions = questions.split("\r\n\r\n")
@@ -39,8 +42,10 @@ else if(process.argv[2] === "merge"){
 
   fs.appendFileSync(mergeFile, "utf8");
   fs.writeFileSync(mergeFile, "Soransh Singh")
+
   for(let i=start; i<=end; i++){
     filePath = `ques${i<10?"0":""}${i}.cpp`
+    console.log(filePath);
     text = fs.readFileSync(`./../${filePath}`, "utf8")
     // fs.writeFileSync(mergeFile, `\n\n\n${filePath}\n\n`, {flag: 'a+'})
     fs.writeFileSync(mergeFile, `\n\n\n${questions[i-1]}\n\ncode:\n` , {flag: 'a+'})
