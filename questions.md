@@ -57,3 +57,21 @@ equivalents.
 15. Write a program to implement the algorithm to search an element in an array of N elements 
 using linear search and binary search and determine the time to search the element in each 
 case.
+
+
+16. Write a program to add and multiply two given matrices of specified dimensions.
+
+
+17. Write a program to find the maximum and minimum values stored in an array of N integers.
+
+
+18. Write a program to remove the duplicate values from an ordered array of N element.
+
+
+19. Write a program to rearrange the elements in an array of N elements so that they appear in order using insertion sort. 
+
+
+20. Write a program to implement Quick sort recursively on an unsorted array of N elements and determine the time to sort the elements.
+
+
+21. Write a program to sort an array of n elements using Selection sort and determine the time to sort the elements.
